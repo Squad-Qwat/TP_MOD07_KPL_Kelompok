@@ -26,7 +26,7 @@ namespace tpmod07_kelompok
         {
             string json = File.ReadAllText(filePath);
             Mahasiswa data = JsonSerializer.Deserialize<Mahasiswa>(json);
-            Console.WriteLine("Nama " + data.nama.depan + " " + data.nama.depan + " dengan nim " + data.nim + " dari fakultas " + data.fakultas);
+            Console.WriteLine("Nama " + data.nama.depan + " " + data.nama.belakang + " dengan nim " + data.nim + " dari fakultas " + data.fakultas);
         }
 
     }
