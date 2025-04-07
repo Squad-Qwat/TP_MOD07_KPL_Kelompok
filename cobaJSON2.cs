@@ -11,16 +11,20 @@ namespace cobaJSON2
         public string name { get; set; }
     }
 
-    public class KuliahMahasiswa_103022300082
+    public class CourseList 
     {
         public List<Course> courses { get; set; }
+    }
+
+    public class KuliahMahasiswa_103022300082
+    {
 
         public static void ReadJSON(string fileName)
         {
             try
             {
                 string jsonString = File.ReadAllText(fileName);
-                KuliahMahasiswa_103022300082 kuliahMahasiswa = JsonSerializer.Deserialize<KuliahMahasiswa_103022300082>(jsonString)!;
+                CourseList kuliahMahasiswa = JsonSerializer.Deserialize<CourseList>(jsonString)!;
 
                 Console.WriteLine("Daftar mata kuliah yang diambil:");
                 for (int i = 0; i < kuliahMahasiswa.courses.Count; i++)

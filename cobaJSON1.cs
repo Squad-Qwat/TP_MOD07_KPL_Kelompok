@@ -1,55 +1,39 @@
 ﻿using System;
-using System.IO;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text.Json;
-// using Newtonsoft.Json;
+using System.Threading.Tasks;
+
 
 namespace cobaJSON1
 {
-    public class Name 
+    public class Nama
     {
-        public string depan {  get; set; }
+        public string depan { get; set; }
         public string belakang { get; set; }
     }
+
+    public class Mahasiswa
+    {
+        public Nama nama { get; set; }
+        public string nim { get; set; }
+        public string fakultas { get; set; }
+    }
+
     public class DataMahasiswa_103022300082
     {
-        public string NIM { get; set; }
-        public List<Name> Nama { get; set; }
-        public string Fakultas { get; set; }
-
-#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
-        public DataMahasiswa_103022300082() { }
-#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
-
-        //public string GetNIM() { return nim; }
-        //public void SetNIM(string nim) { this.nim = nim; }
-        //public string GetNamaDepan() { return namadepan; }
-        //public void SetNamaDepan(string namadepan) { this.namadepan = namadepan; }
-        //public string GetNamaBelakang() { return namabelakang; }
-        //public void SetNamaBelakang(string namabelakang) { this.namabelakang = namabelakang; }
-        //public string GetFakultas() { return fakultas; }
-        //public void SetFakultas(string fakultas) { this.fakultas = fakultas; }
-
-        public static DataMahasiswa_103022300082 ReadJSON(string fileName)
+        Mahasiswa? mahasiswa;
+        public async Task ReadJson()
         {
-            try
-            {
-                string jsonData = File.ReadAllText(fileName);
-                DataMahasiswa_103022300082 mahasiswa = JsonSerializer.Deserialize<DataMahasiswa_103022300082>(jsonData)!;
-                // DataMahasiswa_103022300082 mahasiswa = JsonConvert.DeserializeObject<DataMahasiswa_103022300082>(jsonData);
+            string fileName = "tp7_1_103022300144.json";
+            using FileStream stream = File.OpenRead(fileName);
 
-                return mahasiswa;
-                // return JsonSerializer.Deserialize<DataMahasiswa>(jsonData);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"An error occurred: {ex.Message}");
-            }
-            return null;
+            mahasiswa = await JsonSerializer.DeserializeAsync<Mahasiswa?>(stream);
         }
 
         public void PrintMahasiswa()
         {
-            Console.WriteLine($"Nama {Nama} dengan nim {NIM} dari fakultas {Fakultas}");
+            Console.WriteLine("Nama: " + mahasiswa?.nama?.depan + " " + mahasiswa?.nama?.belakang + " dengan nim: " + mahasiswa?.nim + " dari fakultas: " + mahasiswa?.fakultas);
         }
     }
 }

@@ -4,15 +4,15 @@ using cobaJSON2;
 
 public class Program
 {
-    public static void Main(string[] args)
+    public static async Task Main(string[] args)
     {
         /* 
          * According to Microsoft guide to deserialize JSON file with 'using System.text.Json', 
          * if using File.ReadAllText(), the file must be in the same directory as the executable. 
          * So no need to specify the path.
          */
-        string jsonFilePath = "tp7_1_103022300082.json";
-        DataMahasiswa_103022300082 mahasiswa = DataMahasiswa_103022300082.ReadJSON(jsonFilePath);
+        DataMahasiswa_103022300082 mahasiswa = new DataMahasiswa_103022300082();
+        await mahasiswa.ReadJson();
         mahasiswa.PrintMahasiswa();
 
         // KuliahMahasiswa_103022300082 kuliahMahasiswa = new KuliahMahasiswa_103022300082();
