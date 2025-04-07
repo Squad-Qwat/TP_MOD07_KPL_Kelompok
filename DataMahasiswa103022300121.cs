@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace tpmodul7_kelompok_2
+namespace tpmod07_kelompok
 {
     class DataMahasiswa103022300121
     {

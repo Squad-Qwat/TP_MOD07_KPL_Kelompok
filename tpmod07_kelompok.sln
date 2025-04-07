@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35818.85 d17.13
+VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tpmodul7_kelompok_2", "tpmodul7_kelompok_2.csproj", "{486DB68F-F72F-4813-91D4-204CDC9AAF39}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tpmod07_kelompok", "tpmod07_kelompok.csproj", "{486DB68F-F72F-4813-91D4-204CDC9AAF39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
