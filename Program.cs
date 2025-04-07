@@ -6,5 +6,10 @@ public class Program
     {
         DataMahasiswa_103022300144 mahasiswa = new DataMahasiswa_103022300144();
         await mahasiswa.ReadJson();
+
+        Console.WriteLine("");
+
+        KuliahMahasiswa_103022300144 daftarKuliah = new KuliahMahasiswa_103022300144();
+        await daftarKuliah.ReadJson();
     }
 }
