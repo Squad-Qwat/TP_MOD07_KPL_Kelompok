@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35818.85 d17.13
+VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tpmod07_kelompok", "tpmod07_kelompok.csproj", "{38E1537C-E6E2-4766-994A-295D4F17D6DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tpmod07_kelompok", "tpmod07_kelompok.csproj", "{486DB68F-F72F-4813-91D4-204CDC9AAF39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{38E1537C-E6E2-4766-994A-295D4F17D6DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{38E1537C-E6E2-4766-994A-295D4F17D6DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{38E1537C-E6E2-4766-994A-295D4F17D6DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{38E1537C-E6E2-4766-994A-295D4F17D6DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{486DB68F-F72F-4813-91D4-204CDC9AAF39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{486DB68F-F72F-4813-91D4-204CDC9AAF39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{486DB68F-F72F-4813-91D4-204CDC9AAF39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{486DB68F-F72F-4813-91D4-204CDC9AAF39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {AC92732F-27DC-4D81-9DDE-9751BD3A2822}
+		SolutionGuid = {018BC275-FA2D-489C-96E0-F10F9635A988}
 	EndGlobalSection
 EndGlobal
